@@ -1,4 +1,40 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ZIGET
+
+
+
+## Method and Explanation
+
+I have taken a simple approach for completing this task. All my code is in 2 files `Ziget.js` and `Ziget.css`. I have tried to stay close to the design and I have some some liberty to make the app look a little better. My primary focus was on functionality.
+
+- My State:
+  `this.state = {
+      usernames: ``,
+      individual: false,
+      jobId: ``,
+      data: {},
+      dataOut: ``,
+      loading: false
+    };`
+    
+- My Functions:
+ - handleTAChange = This handles the changes to the `Username TextArea`
+ - handleCBChange = This handles the changes to the `Individual Checkbox`
+ - handleSubmit = This is the submit function where all the other functions are called to run as needed.
+ - getJobID = This function performs the `POST` method Fetch to returns the `JobId` by passing an object `{
+  "username": "account1,account2,...",
+  "individual": true
+}`
+ - getData = This function performs the `GET` method Fetch to return the engagement data from Zyper by passing the extracted jobId from the `getJobID` function.
+ 
+ ## Observations, Problems and tried or possible solutions.
+ 
+ - `Result Status 202` = A possible solution is to call the getData(GET Fetch) call with some delay. I have done it a 3 second delay and the Status 202 doesn't occur at all now.
+ 
+ - `Individual Toggle` = There seems to be a problem with the API where it hardly ever recognizes the individual as false. I did some testing on `PostMan Ap`p and all the results were `Individual = true` even if I set it to `false`.
+ 
+ - `Cors restriction for localhost` = The API's Cors restriction do not allow the data to be read because the code is being run on the dev server on localhost
+ 
+ I am open to questions - inikhilkedia@gmail.com
 
 ## Available Scripts
 
