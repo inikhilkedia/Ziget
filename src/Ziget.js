@@ -19,6 +19,7 @@ export default class Ziget extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.getJobID = this.getJobID.bind(this);
     this.getData = this.getData.bind(this);
+    this.displayData = this.displayData.bind(this);
   }
 
   handleTAChange = event => this.setState({ usernames: event.target.value });
