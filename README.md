@@ -1,6 +1,6 @@
 ## ZIGET
 
-
+![alt text](https://github.com/inikhilkedia/Ziget/blob/master/Screenshot.png "Ziget Screenshot")
 
 ## Method and Explanation
 
