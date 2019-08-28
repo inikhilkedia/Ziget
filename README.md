@@ -4,7 +4,7 @@
 
 ## Method and Explanation
 
-I have taken a simple approach for completing this task. All my code is in 2 files `Ziget.js` and `Ziget.css`. I have tried to stay close to the design and I have some some liberty to make the app look a little better. My primary focus was on functionality.
+I have taken a simple approach for completing this task. All my code is in 2 files `Ziget.js` and `Ziget.css`. I have tried to stay close to the design and I have taken some liberty to make the app look a little better. My primary focus was on functionality.
 
 - My State:
   `this.state = {
@@ -30,7 +30,7 @@ I have taken a simple approach for completing this task. All my code is in 2 fil
  
  - `Result Status 202` = A possible solution is to call the getData(GET Fetch) call with some delay. I have done it a 3 second delay and the Status 202 doesn't occur at all now.
  
- - `Individual Toggle` = There seems to be a problem with the API where it hardly ever recognizes the individual as false. I did some testing on `PostMan Ap`p and all the results were `Individual = true` even if I set it to `false`.
+ - `Individual Toggle` = There seems to be a problem with the API where it hardly ever recognizes the individual as false. I did some testing on `PostMan App` and all the results were `Individual = true` even if I set it to `false`.
  
  - `Cors restriction for localhost` = The API's Cors restriction do not allow the data to be read because the code is being run on the dev server on localhost
  
